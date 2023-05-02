@@ -1,0 +1,12 @@
+function numeroMayor (lista){
+    let mayor = lista [0];
+    for (let i = 1 ; i < lista.lenght; i++){
+        if (lista [i] > mayor ){
+            mayor = lista [1];
+        }
+    }
+return mayor;
+}
+
+console.log (numeroMayor([3,5,7,1,6]));//devuelve
+

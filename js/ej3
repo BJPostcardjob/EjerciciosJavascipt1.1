@@ -1,0 +1,19 @@
+function seRepite(num, lista){
+    let contador = 0;
+    for(let i=0; i <lista.length; i ++){
+        if(lista[i]===num){
+            contador++;
+        }
+    }
+    if (contador>i){
+        return `El número ${num} se encuentra más de una vez`;
+    } else {
+        return `No hay números repetidos`;
+    }
+
+}
+
+console.log(seRepite(5, [1, 22, 5, 17, 10, 5, 40, 5]));//devuelve numero 5 se encuentra más de una vez
+console.log(seRepite(7, [7, 41, 5, 7, 10, 13, 2]));//devuelve numero 7 se encuentra más de una vez
+console.log(seRepite(9, [1, 22, 5, 14, 24, 31, 27, 15, 105]));//devuelve numero 5 se encuentra más de una vez
+

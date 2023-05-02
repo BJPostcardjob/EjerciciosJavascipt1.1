@@ -1,0 +1,12 @@
+function desordenar (lista) {
+    let nuevaLista = [];
+    while (lista.length>0){
+        let indice = Math.floor(Math.random() * lista.length);
+        nuevaListar.push (lista[indice]);
+        lista.splice(indice,1);
+    }
+    return nuevaLista;
+
+}
+
+console.log(desordenar([1, 2, 5, 14, 24, 31, 50, 105]));// devuelve un arreglo aleatorio
